@@ -31,7 +31,7 @@
     \hspace{5pt}
     \faIcon{linkedin} \href{https://linkedin.com/in/hiegz}{in/hiegz} \\[10pt]
 
-    Web Developer and Professional Tea Degustator. Details follow below.
+    Professional Tea Degustator
 \end{center}
 
 \section{Education}
@@ -45,58 +45,99 @@
         \end{itemize}
 \end{itemize}
 
-\section{Projects}
+\section{Work Experience}
 
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \item
-        \href{https://github.com/hiegz/chester}{\large\bfseries Chester} \\
-        {\itshape UCI Chess Engine}
+\begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+    \item {\large\bfseries Open Source}
 
-        Implemented to date:
+        \:\: {\faIcon{github} \href{https://github.com/hiegz}{\ttfamily \underline{github.com/hiegz}}}
 
-        \begin{itemize}
-            \item bitboard-based board representation
-            \item efficient pseudo-legal move generation leveraging precomputed attack tables and magic bitboards
-        \end{itemize}
+        \vspace{7pt}
+        \hspace{5pt}
+        Recent Contributions:
 
-        Work in progress:
-
-        \begin{itemize}
-            \item move validation required for legal move generation
-            \item position evaluation
-            \item Universal Chess Interface (UCI) protocol
-        \end{itemize}
-
-    \item
-        \href{https://github.com/hiegz/fuizon}{\large\bfseries Fuizon} \\
-        {\itshape Cross-Platform TUI Library for Zig}
-
-        Implemented to date:
-
-        \begin{itemize}
-            \item low-level abstraction layer over terminal I/O (alternate screen, raw mode, polling, keyboard events, etc.)
-            \item efficient rendering engine where each render cycle only renders the diff between previous and current frames
-            \item incremental constraint solver using the Cassowary algorithm for dynamic layout models
-            \item minimal widget kit
-        \end{itemize}
-
-        Work in progress:
-
-        \begin{itemize}
-            \item mouse event support
-            \item more extensive layout and widget set
-            \item document object model (DOM)
-        \end{itemize}
+        \hspace{20pt}
+        \begin{tabular}{@{}lp{8cm}}
+            \href{https://github.com/hiegz/chester}{\ttfamily hiegz/chester} & UCI Chess Engine \\[3pt]
+            \href{https://github.com/hiegz/fuizon}{\ttfamily hiegz/fuizon}   & Cross-Platform TUI Library for Zig \\[3pt]
+            \href{https://github.com/hiegz/raspi}{\ttfamily hiegz/raspi}     & Raspberry Pi 4 Model B as a wireless hotspot with internet access through a remote VPN server \\[3pt]
+            \href{https://github.com/hiegz/aes}{\ttfamily hiegz/aes}         & Advanced Encryption Standard (AES) \\[3pt]
+            \href{https://github.com/hiegz/des}{\ttfamily hiegz/des}         & Data Encryption Standard (DES)
+        \end{tabular}
 \end{itemize}
 
+\section{Skills}
+
+\vspace{5pt}
+\begin{minipage}[t]{0.49\linewidth}
+    \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+        \item {\large\bfseries Frontend}
+
+            \begin{itemize}
+                \item web essentials (\verb|HTML|, \verb|CSS|, \verb|Javascript|, \verb|React|, and practically everything else)
+                \item desktop app development for \verb|Windows| using \verb|WPF| or \verb|UWP|
+            \end{itemize}
+    \end{itemize}
+\end{minipage}
+\hspace{10pt}
+\begin{minipage}[t]{0.49\linewidth}
+    \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+        \item {\large\bfseries Backend}
+            \begin{itemize}
+                \item \verb|Java|/\verb|Spring Boot|, \verb|Go|, \verb|NodeJS|
+                \item \verb|PostgreSQL|, \verb|MySQL|, \verb|MongoDB|
+                \item \verb|Amazon|, \verb|Cloudflare| (e.g. \verb|EC2|, \verb|S3|, \verb|R2|, ...)
+            \end{itemize}
+    \end{itemize}
+\end{minipage}
+\\[20pt]
+\begin{minipage}[t]{0.49\linewidth}
+    \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+        \item {\large\bfseries Systems Programming}
+
+            \begin{itemize}
+                \item low-level programming in \verb|C/C++|, \verb|Rust|, and \verb|Zig|
+                \item experience with \verb|Make| and \verb|CMake|
+                \item \verb|POSIX| system interface
+                \item cross-platform terminal I/O (see \href{https://github.com/hiegz/fuizon}{\ttfamily \underline{hiegz/fuizon}})
+                \item non-blocking I/O, asynchronous event loops (see \href{https://github.com/hiegz/rcs}{\ttfamily \underline{hiegz/rcs}})
+                \item memory allocation (see \href{https://github.com/hiegz/heap}{\ttfamily \underline{hiegz/heap}})
+                \item cross-language integrations via FFI (see
+                    \href{https://github.com/hiegz/crossterm-ffi}{\ttfamily \underline{hiegz/crossterm-ffi}} and
+                    \href{https://github.com/hiegz/fuizon}{\ttfamily \underline{hiegz/fuizon}})
+            \end{itemize}
+    \end{itemize}
+\end{minipage}
+\hspace{10pt}
+\begin{minipage}[t]{0.49\linewidth}
+    \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+        \item {\large\bfseries System Administration}
+
+            \begin{itemize}
+                \item experience with Windows and Linux distros (Kali, Ubuntu, Mint, Arch, etc.)
+            \end{itemize}
+
+            \hspace{5pt}
+            For example, consider my setup:
+
+            \begin{itemize}
+                \item primary development environment on Arch Linux, customized
+                    for daily use and system-level efficiency (see
+                    \href{https://github.com/hiegz/dotfiles}{\ttfamily \underline{hiegz/dotfiles}})
+                \item secondary environment on Windows for cross-platform
+                    testing and software compatibility
+                \item raspberry pi setup as a dual-band wireless access
+                    point tunneling all traffic through a remote VPN server
+                    (see \href{https://github.com/hiegz/raspi}{\ttfamily
+                    \underline{hiegz/raspi}})
+            \end{itemize}
+    \end{itemize}
+\end{minipage}
+
+\vspace{5pt}
 \section{Languages}
 
 \hspace{0.15in}
-\begin{tabular}{@{}ll}
-    \textbf{English}   & C1 \\[10pt]
-    \textbf{German}    & C1 \\[10pt]
-    \textbf{Ukrainian} & Native \\[10pt]
-    \textbf{Russian}   & Native \\
-\end{tabular}
+\textbf{English} \:  C1 \hspace{20pt} \textbf{German} \: C1 \hspace{20pt} \textbf{Ukrainian} \: Native \hspace{20pt} \textbf{Russian} \: Native
 
 \end{document}
