@@ -1,0 +1,103 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={7in, 11in}]{geometry}
+
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[ngerman]{babel}
+
+\hypersetup{hidelinks}
+\pagenumbering{gobble}
+
+\usepackage{ulem}
+\usepackage[]{titlesec}
+    \titleformat{\section}
+    {\scshape\Large}
+    {}
+    {0em}
+    {}[{\titlerule}]
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large @hiegz} \\[3pt]
+    \textbf{\huge Volodymyr But} \\[7pt]
+
+    \faIcon{globe} \href{https://www.hiegz.com}{hiegz.com}
+    \hspace{5pt}
+    \faIcon{inbox} hello@hiegz.com \\[2pt]
+
+    \faIcon{github} \href{https://github.com/hiegz}{github.com/hiegz}
+    \hspace{5pt}
+    \faIcon{linkedin} \href{https://linkedin.com/in/hiegz}{in/hiegz} \\[10pt]
+
+    Web-Entwickler und professioneller Tee-Degustator. Details folgen unten.
+\end{center}
+
+\section{Ausbildung}
+
+\begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+    \item {\large\bfseries Hochschule Trier} \hfill 09/24 - heute \\
+        {\itshape Bachelor of Science in K"unstlicher Intelligenz und Maschinellem Lernen \\ Fachbereich Informatik}
+
+        \begin{itemize}
+            \item Aktueller Notendurchschnitt: 1.7
+        \end{itemize}
+\end{itemize}
+
+\section{Projekte}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+        \href{https://github.com/hiegz/chester}{\large\bfseries Chester} \\
+        {\itshape Schachprogramm mit UCI-Schnittstelle}
+
+        Bis heute implementiert:
+
+        \begin{itemize}
+            \item Bitboard-basierte Brettdarstellung
+            \item effiziente Generierung von pseudo-legalen Zügen unter Verwendung vorab berechneter Angriffstabellen und Magic Bitboards
+        \end{itemize}
+
+        in Entwicklung:
+
+        \begin{itemize}
+            \item Zugvalidierung erforderlich für die Erzeugung legaler Züge
+            \item Stellenbewertung
+            \item Universal Chess Interface (UCI) Protokoll
+        \end{itemize}
+
+    \item
+        \href{https://github.com/hiegz/fuizon}{\large\bfseries Fuizon} \\
+        {\itshape Plattformübergreifende TUI-Bibliothek für Zig}
+
+        Bis heute implementiert:
+
+        \begin{itemize}
+            \item niedrigstufige Abstraktionsschicht für Terminal I/O  (alternativer Bildschirm, Rohmodus, Polling, Tastaturereignisse, usw.)
+            \item effiziente Rendering-Engine, bei der jeder Render-Zyklus nur die Unterschiede zwischen vorherigem und aktuellem Frame zeichnet.
+            \item Inkrementeller Constraint-Solver unter Verwendung des Cassowary-Algorithmus für dynamische Layout-Modelle
+            \item minimaler Widget-Bausatz
+        \end{itemize}
+
+        in Entwicklung:
+
+        \begin{itemize}
+            \item Unterstützung für Mausereignisse
+            \item Umfangreicheres Layout- und Widget-Set
+            \item Dokument-Objektmodell (DOM)
+        \end{itemize}
+\end{itemize}
+
+\section{Sprachen}
+
+\hspace{0.15in}
+\begin{tabular}{@{}ll}
+    \textbf{Englisch}   & C1 \\[10pt]
+    \textbf{Deutsch}    & C1 \\[10pt]
+    \textbf{Ukrainisch} & Muttersprache \\[10pt]
+    \textbf{Russisch}   & Muttersprache \\
+\end{tabular}
+
+\end{document}
