@@ -1,0 +1,102 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={7in, 11in}]{geometry}
+
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\hypersetup{hidelinks}
+\pagenumbering{gobble}
+
+\usepackage{ulem}
+\usepackage[]{titlesec}
+    \titleformat{\section}
+    {\scshape\Large}
+    {}
+    {0em}
+    {}[{\titlerule}]
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large @hiegz} \\[3pt]
+    \textbf{\huge Volodymyr But} \\[7pt]
+
+    \faIcon{globe} \href{https://www.hiegz.com}{hiegz.com}
+    \hspace{5pt}
+    \faIcon{inbox} hello@hiegz.com \\[2pt]
+
+    \faIcon{github} \href{https://github.com/hiegz}{github.com/hiegz}
+    \hspace{5pt}
+    \faIcon{linkedin} \href{https://linkedin.com/in/hiegz}{in/hiegz} \\[10pt]
+
+    Web Developer and Professional Tea Degustator. Details follow below.
+\end{center}
+
+\section{Education}
+
+\begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
+    \item {\large\bfseries Trier University of Applied Sciences} \hfill 09/24 - Present \\
+        {\itshape Bachelor of Science in Artificial Intelligence and Machine Learning. \\ Department of Computer Science}
+
+        \begin{itemize}
+            \item Current GPA: 1.7 (German Grading Scale)
+        \end{itemize}
+\end{itemize}
+
+\section{Projects}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+        \href{https://github.com/hiegz/chester}{\large\bfseries Chester} \\
+        {\itshape UCI Chess Engine}
+
+        Implemented to date:
+
+        \begin{itemize}
+            \item bitboard-based board representation
+            \item efficient pseudo-legal move generation leveraging precomputed attack tables and magic bitboards
+        \end{itemize}
+
+        Work in progress:
+
+        \begin{itemize}
+            \item move validation required for legal move generation
+            \item position evaluation
+            \item Universal Chess Interface (UCI) protocol
+        \end{itemize}
+
+    \item
+        \href{https://github.com/hiegz/fuizon}{\large\bfseries Fuizon} \\
+        {\itshape Cross-Platform TUI Library for Zig}
+
+        Implemented to date:
+
+        \begin{itemize}
+            \item low-level abstraction layer over terminal I/O (alternate screen, raw mode, polling, keyboard events, etc.)
+            \item efficient rendering engine where each render cycle only renders the diff between previous and current frames
+            \item incremental constraint solver using the Cassowary algorithm for dynamic layout models
+            \item minimal widget kit
+        \end{itemize}
+
+        Work in progress:
+
+        \begin{itemize}
+            \item mouse event support
+            \item more extensive layout and widget set
+            \item document object model (DOM)
+        \end{itemize}
+\end{itemize}
+
+\section{Languages}
+
+\hspace{0.15in}
+\begin{tabular}{@{}ll}
+    \textbf{English}   & C1 \\[10pt]
+    \textbf{German}    & C1 \\[10pt]
+    \textbf{Ukrainian} & Native \\[10pt]
+    \textbf{Russian}   & Native \\
+\end{tabular}
+
+\end{document}
