@@ -50,7 +50,8 @@
 \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
     \item {\large\bfseries Open Source}
 
-        \:\: {\faIcon{github} \href{https://github.com/hiegz}{\ttfamily \underline{github.com/hiegz}}}
+        \:\: {\faIcon{github} \href{https://github.com/hiegz}{\ttfamily github.com/hiegz}}
+        \:\: {\faIcon{github} \href{https://github.com/rootbucket}{\ttfamily github.com/rootbucket}}
 
         \vspace{7pt}
         \hspace{5pt}
@@ -58,11 +59,11 @@
 
         \hspace{20pt}
         \begin{tabular}{@{}lp{8cm}}
-            \href{https://github.com/hiegz/chester}{\ttfamily hiegz/chester} & UCI Chess Engine \\[3pt]
-            \href{https://github.com/hiegz/fuizon}{\ttfamily hiegz/fuizon}   & Cross-Platform TUI Library for Zig \\[3pt]
-            \href{https://github.com/hiegz/raspi}{\ttfamily hiegz/raspi}     & Raspberry Pi 4 Model B as a wireless hotspot with internet access through a remote VPN server \\[3pt]
-            \href{https://github.com/hiegz/aes}{\ttfamily hiegz/aes}         & Advanced Encryption Standard (AES) \\[3pt]
-            \href{https://github.com/hiegz/des}{\ttfamily hiegz/des}         & Data Encryption Standard (DES)
+            \href{https://github.com/rootbucket/lfs}{\ttfamily rootbucket/lfs} & Git Large File Storage \\[3pt]
+            \href{https://github.com/hiegz/chester}{\ttfamily hiegz/chester}   & UCI Chess Engine \\[3pt]
+            \href{https://github.com/hiegz/fuizon}{\ttfamily hiegz/fuizon}     & Cross-Platform TUI Library for Zig \\[3pt]
+            \href{https://github.com/hiegz/aes}{\ttfamily hiegz/aes}           & Advanced Encryption Standard (AES) \\[3pt]
+            \href{https://github.com/hiegz/des}{\ttfamily hiegz/des}           & Data Encryption Standard (DES)
         \end{tabular}
 \end{itemize}
 
@@ -71,22 +72,26 @@
 \vspace{5pt}
 \begin{minipage}[t]{0.49\linewidth}
     \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
-        \item {\large\bfseries Frontend}
+        \item {\large\bfseries Web Development}
 
             \begin{itemize}
-                \item web essentials (\verb|HTML|, \verb|CSS|, \verb|Javascript|, \verb|React|, and practically everything else)
-                \item desktop app development for \verb|Windows| using \verb|WPF| or \verb|UWP|
+                \item Frontend : \verb|HTML|, \verb|CSS|, \verb|Javascript|, \verb|React|, ...
+                \item Backend : \verb|Java|/\verb|Spring Boot|, \verb|Go|, \verb|Node|, ...
+                \item Databases : \verb|MySQL|, \verb|PostgreSQL|, \verb|MongoDB|, ...
+                \item Hosting : \verb|Amazon|, \verb|Cloudflare| (\verb|EC2|, \verb|S3|, \verb|R2|, ...)
             \end{itemize}
     \end{itemize}
 \end{minipage}
 \hspace{10pt}
 \begin{minipage}[t]{0.49\linewidth}
     \begin{itemize}[leftmargin=0.15in, rightmargin=0.15in, label={}]
-        \item {\large\bfseries Backend}
+        \item {\large\bfseries AI \& Data Science}
             \begin{itemize}
-                \item \verb|Java|/\verb|Spring Boot|, \verb|Go|, \verb|NodeJS|
-                \item \verb|PostgreSQL|, \verb|MySQL|, \verb|MongoDB|
-                \item \verb|Amazon|, \verb|Cloudflare| (e.g. \verb|EC2|, \verb|S3|, \verb|R2|, ...)
+                \item \verb|Python| (\verb|scikit|, \verb|scipy|, \verb|numpy|, \verb|matplotlib|)
+            \end{itemize}
+            Related Work:
+            \begin{itemize}
+                \item UCI Chess Engine (see \href{https://github.com/hiegz/chester}{\ttfamily hiegz/chester}) \\[3pt]
             \end{itemize}
     \end{itemize}
 \end{minipage}
@@ -97,14 +102,18 @@
 
             \begin{itemize}
                 \item low-level programming in \verb|C/C++|, \verb|Rust|, and \verb|Zig|
-                \item experience with \verb|Make| and \verb|CMake|
-                \item \verb|POSIX| system interface
-                \item cross-platform terminal I/O (see \href{https://github.com/hiegz/fuizon}{\ttfamily \underline{hiegz/fuizon}})
-                \item non-blocking I/O, asynchronous event loops (see \href{https://github.com/hiegz/rcs}{\ttfamily \underline{hiegz/rcs}})
-                \item memory allocation (see \href{https://github.com/hiegz/heap}{\ttfamily \underline{hiegz/heap}})
-                \item cross-language integrations via FFI (see
-                    \href{https://github.com/hiegz/crossterm-ffi}{\ttfamily \underline{hiegz/crossterm-ffi}} and
-                    \href{https://github.com/hiegz/fuizon}{\ttfamily \underline{hiegz/fuizon}})
+                \item experience with \verb|POSIX| system interface
+            \end{itemize}
+            Related Work:
+            \begin{itemize}
+                \item raw memory allocation in Assembly \\
+                    (see \href{https://github.com/hiegz/heap}{\ttfamily hiegz/heap})
+                \item asynchronous non-blocking I/O \\
+                    (see \href{https://github.com/hiegz/rcs}{\ttfamily hiegz/rcs})
+                \item cross-platform terminal I/O \\
+                    (see \href{https://github.com/hiegz/fuizon}{\ttfamily hiegz/fuizon})
+                \item cross-language integrations via FFI \\
+                    (see \href{https://github.com/hiegz/crossterm-ffi}{\ttfamily hiegz/fuizon})
             \end{itemize}
     \end{itemize}
 \end{minipage}
@@ -114,22 +123,16 @@
         \item {\large\bfseries System Administration}
 
             \begin{itemize}
-                \item experience with Windows and Linux distros (Kali, Ubuntu, Mint, Arch, etc.)
+                \item Linux \\ (Arch, Ubuntu, Mint, Kali, Raspberry Pi OS)
+                \item Windows
             \end{itemize}
-
-            \hspace{5pt}
-            For example, consider my setup:
-
+            Related Work:
             \begin{itemize}
-                \item primary development environment on Arch Linux, customized
-                    for daily use and system-level efficiency (see
-                    \href{https://github.com/hiegz/dotfiles}{\ttfamily \underline{hiegz/dotfiles}})
-                \item secondary environment on Windows for cross-platform
-                    testing and software compatibility
-                \item raspberry pi setup as a dual-band wireless access
-                    point tunneling all traffic through a remote VPN server
-                    (see \href{https://github.com/hiegz/raspi}{\ttfamily
-                    \underline{hiegz/raspi}})
+                \item Custom \verb|WSL2| kernel with \verb|zfs|, \verb|dm_crypt|, and usb mass storage enabled
+                    (see \href{https://github.com/hiegz/wsl2}{\ttfamily hiegz/wsl2})
+                \item Raspberry Pi 4 Model B as a wireless hotspot with
+                    internet access through a remote \verb|VPN| server
+                    (see \href{https://github.com/hiegz/raspi}{\ttfamily hiegz/raspi})
             \end{itemize}
     \end{itemize}
 \end{minipage}
